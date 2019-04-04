@@ -1,0 +1,44 @@
+
+    main{
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 140px);
+    }
+
+    nav {
+        order:1;
+        width: 250px;
+    }
+
+    aside {
+        order:2;
+        width: 250px;
+    }
+        
+    .content {
+        flex:1;
+        order: 3;
+    }
+
+    @media (min-width:960px){
+        main{
+            display: flex;
+            flex-direction: row;
+            flex:1;
+        }
+    
+        nav {
+            order:1;
+            width: 250px;
+        }
+    
+        aside {
+            order:3;
+            width: 250px;
+        }
+            
+        .content {
+            flex:1;
+            order: 2;
+        } 
+    }
